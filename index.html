@@ -1,1 +1,65 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Unknown Planet: un juego de exploración y terror psicológico.">
+  <title>The Unknown Planet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">JUEGO DE EXPLORACIÓN Y SUPERVIVENCIA</p>
+        <h1>THE UNKNOWN <span>PLANET</span></h1>
+      </div>
+      <div class="status" aria-live="polite">
+        <div><span class="status-label">PISTAS</span><strong id="clue-count">0 / 5</strong></div>
+        <div><span class="status-label">PUNTOS</span><strong id="score">0</strong></div>
+        <div><span class="status-label">VIDAS</span><strong id="lives">♥ ♥ ♥</strong></div>
+      </div>
+    </header>
+
+    <section class="game-panel">
+      <div class="canvas-wrap">
+        <canvas id="game" width="900" height="600" aria-label="Mapa del planeta. Usa las flechas del teclado para moverte."></canvas>
+        <div id="screen" class="screen">
+          <div class="screen-card">
+            <p class="eyebrow">SEÑAL DE EMERGENCIA DETECTADA</p>
+            <h2 id="screen-title">NO ESTÁS SOLO.</h2>
+            <p id="screen-message">Explora el planeta, encuentra los cinco documentos y llega a la nave. Evita a la criatura y usa los refugios para ocultarte.</p>
+            <button id="start-button" type="button">COMENZAR EXPLORACIÓN</button>
+          </div>
+        </div>
+      </div>
+      <div class="legend">
+        <span><i class="dot player-dot"></i> Tú</span>
+        <span><i class="dot monster-dot"></i> Criatura</span>
+        <span><i class="dot clue-dot"></i> Documento</span>
+        <span><i class="dot hide-dot"></i> Escondite</span>
+        <span><i class="dot ship-dot"></i> Nave</span>
+      </div>
+    </section>
+
+    <section class="help">
+      <div>
+        <h2>CONTROLES</h2>
+        <p><kbd>↑</kbd> <kbd>←</kbd> <kbd>↓</kbd> <kbd>→</kbd> Moverse</p>
+      </div>
+      <div>
+        <h2>OBJETIVO</h2>
+        <p>Encuentra los 5 documentos y escapa en la nave.</p>
+      </div>
+      <div>
+        <h2>SUPERVIVENCIA</h2>
+        <p>Entra en un refugio para esconderte de la criatura.</p>
+      </div>
+    </section>
+    <footer>PROYECTO ESCOLAR · HTML + CSS + JAVASCRIPT · GITHUB PAGES</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
